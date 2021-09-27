@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <link rel="stylesheet" href="./css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+          <h1 id="title" class="text-center"> baseball Survey Form</h1>
+          <p id="description" class="description text-center">
+            Thank you for taking the time to help us.
+          </p>
+        </header>
+        <form id="survey-form">
+          <div class="form-group">
+            <label id="name-label" for="name">Name</label>
+            <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required />
+          </div>
+          <div class="form-group">
+            <label id="email-label" for="email">Email</label>
+            <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required />
+          </div>
+          <div class="form-group">
+            <label id="number-label" for="number">Age<span class="clue">(optional)</span></label>
+            <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Age" />
+          </div>
+          <div class="form-group">
+            <p>what is your favorite team?</p>
+            <select id="dropdown" name="role" class="form-control" required>
+              <option disabled selected value>Select current role</option>
+              <option value="Tigres del Licey"> Tigres del Licey</option>
+              <option value="Aguilas Cibaeñas">Aguilas Cibaeñas</option>
+              <option value="Leones del Escogido">Leones del Escogido</option>
+              <option value="Torosdel este">Toros del este></del></option>
+              <option value="Estrellas orientales">Estrellas orientales</option>
+              <option value="Gigantes del cibao">Gigantes del cibao</option>
+            </select>
+          </div>
+      
+          <div class="form-group">
+            <p>hhow much you see your team play ?</p>
+            <label>
+              <input name="user-recommend" value="little" type="radio" class="input-radio" checked />little</label>
+            <label>
+              <input name="user-recommend" value="normal" type="radio" class="input-radio" />normal</label>
+      
+            <label><input name="user-recommend" value="much" type="radio" class="input-radio" />much</label>
+          </div>
+      
+          <div class="form-group">
+            <p>
+              Which team do you hate the most?
+            </p>
+            <select id="most-like" name="mostLike" class="form-control" required>
+              <option disabled selected value>Select an option</option>
+              <option value="Tigres del Licey">Tigres del Licey</option>
+              <option value="Aguilas Cibaeñas">Aguilas Cibaeñas</option>
+              <option value="Toros del este">Toros del este</option>
+              <option value="Leones Escogido">Leones Escogido</option>
+              <option value="Gigantes del cibao">Gigantes del cibao</option>
+            </select>
+          </div>
+      
+          <div class="form-group">
+            <p>
+              Which team do you think will win the season?
+            </p>
+            <label>
+              <input name="prefer" value="Tigres del Licey" type="checkbox" class="input-checkbox" />Tigres del Licey</label>
+      
+            <label>
+              <input name="prefer" value="Aguilas cibaeñas" type="checkbox" class="input-checkbox" />Aguilas cibaeñas</label>
+            <label><input name="prefer" value="Toros del este" type="checkbox" class="input-checkbox">Toros del este</label>
+            <label><input name="prefer" value="Leones del escogido" type="checkbox" class="input-checkbox" />Leones del escogido</label>
+            <label>
+              <input name="prefer" value="Estrellas orientales" type="checkbox" class="input-checkbox" />Estrellas orientales</label>
+      
+            <input name="prefer" value="Gigantes del cibao" type="checkbox" class="input-checkbox" />Gigantes del cibao</label>
+      
+          </div>
+      
+          <div class="form-group">
+            <p>Any comments ?</p>
+            <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..."></textarea>
+          </div>
+      
+          <div class="form-group">
+            <button type="submit" id="submit" class="submit-button">
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+</body>
+</html>
